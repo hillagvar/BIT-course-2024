@@ -1,0 +1,1 @@
+console.log("Zuikis valgo šieną...");
