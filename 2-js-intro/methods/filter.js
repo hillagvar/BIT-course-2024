@@ -60,6 +60,8 @@ console.log(marriedStudents);
 
 console.log(unmarriedStudents);
 
+console.clear();
+
 const pensininkai = students.filter(s => s.age >= 70);
 
 console.log(pensininkai);
