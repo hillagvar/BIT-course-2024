@@ -13,6 +13,8 @@ OPERATORIAI:
 - priskyrimo (=)
 - matematiniai:
     - aritmetiniai: +, -, /, *, % (liekana), ** (kelimas laipsniu)
+    - artimetiniai priskyrimo: 
+    - aritmetiniai: ++, --
 
 
 */

@@ -81,19 +81,20 @@ for (let i = 0; i < people2.length; i++) {
 }
 
 
-
-
 // vardo "Jonas" ilgis yra 5 raides
-// asmens Jonas Jonaitis inicialai yra
+// asmens Jonas Jonaitis inicialai yra J. J.
 
-// console.log(`Vardo ${ name1 } ilgis yra ${ name1.length } simboliai.`);
-// console.log(`Asmens ${ name1 } ${ surname1 } inicialai yra ${ name1[0] }.${ surname1[0] }.`);
+console.log("-----------------");
 
-// console.log(`Vardo ${ name4 } ilgis yra ${ name4.length } simboliai.`);
-// console.log(`Asmens ${ name4 } ${ surname4 } inicialai yra ${ name4[0] }.${ surname4[0] }.`);
+console.log(`Vardo ${name1} ilgis yra ${name1.length} simboliai.`);
+console.log(`Asmens ${name1} ${surname1} inicialai yra ${name1[0]}.${surname1[0]}.`);
 
-// console.log(`Vardo ${ name2 } ilgis yra ${ name2.length } simboliai.`);
-// console.log(`Asmens ${ name2 } ${ surname2 } inicialai yra ${ name2[0] }.${ surname2[0] }.`);
+console.log(`Vardo ${name4} ilgis yra ${name4.length} simboliai.`);
+console.log(`Asmens ${name4} ${surname4} inicialai yra ${name4[0]}.${surname4[0]}.`);
 
-// console.log(`Vardo ${ name3 } ilgis yra ${ name3.length } simboliai.`);
-// console.log(`Asmens ${ name3 } ${ surname3 } inicialai yra ${ name3[0] }.${ surname3[0] }.`);
+console.log(`Vardo ${name2} ilgis yra ${name2.length} simboliai.`);
+console.log(`Asmens ${name2} ${surname2} inicialai yra ${name2[0]}.${surname2[0]}.`);
+
+console.log(`Vardo ${name3} ilgis yra ${name3.length} simboliai.`);
+console.log(`Asmens ${name3} ${surname3} inicialai yra ${name3[0]}.${surname3[0]}.`);
+
