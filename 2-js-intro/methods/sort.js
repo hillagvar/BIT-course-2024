@@ -69,6 +69,16 @@ console.log("---------");
 // nauja studento objekto rakta (minMark) 
 
 for (const student of students3) {
+
+    // galima pasidaryti kopija su student.marks.slice(), kadangi slice
+    // sukuria nauja masyva, arba map, kadangi map irgi sukuria nauja
+    // masyva (student.marks.map(m => m))
+
+    // trecias budas:
+    // const marksCopy = [];
+    // for (const mark of student.marks) {
+    // marksCopy.push(mark);
+    // }
     const sortedMarks = student.marks.toSorted((a, b) => a - b);
     // student.marks.sort((a, b) => a - b);
     student.minMark = sortedMarks[0];
