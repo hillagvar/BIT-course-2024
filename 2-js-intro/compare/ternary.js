@@ -89,3 +89,53 @@ const kainosText = price <= priceTooHigh ? "iperkamomis" : "per brangiomis"
 const ternaryPalanga2 = `${name} prekiauja ${kainosText} prekemis!`;
 
 console.log(ternaryPalanga2);
+
+console.clear();
+
+const x1 = true ? 0 : 1;
+console.log(x1);
+
+const x2 = false ? 0 : 1;
+console.log(x2);
+
+const x3 = 0 ? 1 : 2;
+// nes 0 yra false
+console.log(x3);
+
+const x4 = 1 ? 2 : 3;
+// nes 1 yra true
+console.log(x4);
+
+const x5 = 0
+    ? 1
+    : 2
+        ? 3
+        : 4;
+console.log(x5);
+
+const x6 = 1
+    ? 2
+    : 3
+        ? 4
+        : 5;
+console.log(x6);
+
+const x7 = ""
+    ? 0
+        ? 1
+        : 2
+    : 3;
+console.log(x7);
+
+// const x8 = 0 
+//      ? (1 ? 2 : 3)
+//      : (4 ? 5 : 6);
+
+const x8 = 0
+    ? 1
+        ? 2
+        : 3
+    : 4
+        ? 5
+        : 6;
+console.log(x8);
