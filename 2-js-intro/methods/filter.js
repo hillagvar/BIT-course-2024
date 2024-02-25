@@ -2,13 +2,6 @@ const marks = [10, 2, 8, 4, 6];
 
 const badMarkLimit = 5;
 
-// kokie gauti geri pazymiai?
-// kokie gauti blogi pazymiai?
-// kiek gauta geru pazymiu?
-// kiek gauta blogu pazymiu?
-// koks didziausias blogas pazymys?
-// koks maziausias geras pazymys?
-
 const goodMarks = marks.filter(n => n > badMarkLimit);
 
 console.log(goodMarks);
@@ -65,3 +58,40 @@ console.clear();
 const pensininkai = students.filter(s => s.age >= 70);
 
 console.log(pensininkai);
+
+console.log("------------");
+
+const marks2 = [10, 2, 8, 4, 6];
+
+const badMarkLimit2 = 5;
+
+// kokie gauti geri pazymiai?
+// kokie gauti blogi pazymiai?
+// kiek gauta geru pazymiu?
+// kiek gauta blogu pazymiu?
+// koks didziausias blogas pazymys?
+// koks maziausias geras pazymys?
+
+const onlyGoodMarks = marks2.filter(mark => mark > badMarkLimit2);
+
+console.log(onlyGoodMarks);
+
+const onlyBadMarks = marks2.filter(mark => mark <= badMarkLimit2);
+
+console.log(onlyBadMarks);
+
+console.log(onlyGoodMarks.length);
+
+console.log(onlyBadMarks.length);
+
+onlyBadMarks.sort((a, b) => a - b);
+
+const highestBadMark = onlyBadMarks[onlyBadMarks.length - 1];
+
+console.log("highest bad mark:", highestBadMark);
+
+onlyGoodMarks.sort((a, b) => a - b);
+
+const lowestGoodMark = onlyGoodMarks[0];
+
+console.log("lowest good mark:", lowestGoodMark);
