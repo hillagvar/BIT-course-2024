@@ -59,7 +59,7 @@ for (const student of students3) {
     for (const mark of student.marks) {
         marksSum += mark;
     }
-    student.marksAverage = marksSum / student.marksCount;
+    student.marksAverage = marksSum / student.marks.length;
 }
 
 console.log(students3);
@@ -108,3 +108,22 @@ for (const student of students3) {
 }
 
 console.log(goodStudentNames);
+
+console.clear();
+
+const example = {
+    title: "Long title",
+    subtitle: "Short subtitle",
+};
+
+console.log(example);
+console.log(example.title);
+console.log(example.subtitle);
+
+example.title = "New title";
+console.log(example);
+console.log(example.title);
+console.log(example.subtitle);
+
+example.newStuff = "something interesting...";
+console.log(example);
