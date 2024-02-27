@@ -32,3 +32,42 @@ console.log(t123);
 const rest12 = [...t1, ...t2];
 
 console.log(rest12);
+
+console.clear();
+
+const car = {
+    brand: "Audi",
+    model: 80,
+    colour: "red",
+    doors: 5,
+    wheels: 4,
+    gear: {
+        type: "manual",
+        count: 5,
+    },
+};
+
+const { brand, colour, gear, ...restCar } = car;
+console.log(brand, colour, gear);
+console.log(restCar);
+const { type } = gear;
+console.log(type);
+
+const xBrand = car.brand;
+const xColour = car.colour;
+const xGear = car.gear;
+const xType = xGear.type;
+
+const usedCarKeys = ["brand", "colour", "gear"];
+
+const xRestCar = {};
+// - brand, colour, gear
+// + model, doors, wheels
+
+for (const key in car) {
+    if (!usedCarKeys.includes(key)) {
+        xRestCar[key] = car[key];
+    }
+}
+
+console.log(xRestCar);
